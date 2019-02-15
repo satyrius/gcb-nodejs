@@ -1,0 +1,10 @@
+steps:
+
+- name: 'docker/compose:1.23.2'
+  args: ['-f', 'postgres.yml', 'up', '-d']
+
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['install']
+
+- name: 'gcr.io/cloud-builders/yarn'
+  args: ['migrate']
