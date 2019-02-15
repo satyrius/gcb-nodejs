@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Anton Egorov <anton.egoroff@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "migrate": "knex migrate:latest"
+  },
   "dependencies": {
     "knex": "^0.16.3",
     "pg": "^7.8.0"
