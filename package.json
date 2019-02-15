@@ -1,0 +1,12 @@
+{
+  "name": "gcb-nodejs",
+  "version": "0.1.0",
+  "description": "Google Cloud Build setup for nodejs integration tests",
+  "main": "index.js",
+  "author": "Anton Egorov <anton.egoroff@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.16.3",
+    "pg": "^7.8.0"
+  }
+}
