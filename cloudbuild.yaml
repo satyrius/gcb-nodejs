@@ -8,3 +8,5 @@ steps:
 
 - name: 'gcr.io/cloud-builders/yarn'
   args: ['migrate']
+  env:
+  - DATABASE_URL=postgres://postgres@postgres/postgres
