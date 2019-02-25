@@ -10,3 +10,6 @@ steps:
   args: ['migrate']
   env:
   - DATABASE_URL=postgres://postgres@postgres/postgres
+
+- name: 'docker/compose:1.23.2'
+  args: ['-f', 'postgres.yml', 'rm', '-fsv']
